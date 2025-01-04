@@ -50,6 +50,7 @@ img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
+  user-select: none;
 }
 button {
   background-color: rgba(0, 0, 0, 0.8);
@@ -262,6 +263,19 @@ button:hover {
     span {
       color: var(--text);
       margin-bottom: var(--padding-md);
+      user-select: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: var(--white);
+      }
+    }
+    svg {
+      width: 24px;
+      height: 24px;
+      fill: var(--text);
+      cursor: pointer;
     }
   }
 }
@@ -280,5 +294,39 @@ button:hover {
   &.active {
     opacity: 1;
     pointer-events: auto;
+  }
+}
+
+/* About Section Styles */
+.about {
+  .about__wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: var(--padding-lg);
+
+    .left {
+      max-width: 50%;
+
+      h1 {
+        font-size: 48px;
+        background: var(--gradient);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: 700;
+        line-height: 1.1;
+      }
+    }
+
+    .right {
+      max-width: 50%;
+
+      p {
+        font-size: 16px;
+        color: var(--text);
+        line-height: 1.6;
+      }
+    }
   }
 }

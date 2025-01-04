@@ -100,4 +100,30 @@
   .mobile-menu-btn {
     display: none;
   }
+
+  /* About Section Responsive Styles */
+  .about {
+    .about__wrapper {
+      flex-direction: column;
+      gap: 32px;
+      align-items: center;
+
+      .left,
+      .right {
+        max-width: 100%;
+      }
+      .left {
+        h1 {
+          text-align: center;
+          font-size: 32px;
+        }
+      }
+      .right {
+        p {
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+    }
+  }
 }
