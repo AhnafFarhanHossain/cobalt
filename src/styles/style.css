@@ -330,3 +330,78 @@ button:hover {
     }
   }
 }
+
+/* Features Section Styles */
+.features {
+  h1 {
+    font-size: 48px;
+    max-width: 474px;
+    background: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+  p {
+    font-size: 16px;
+    color: var(--text);
+    max-width: 530px;
+    line-height: 1.6;
+    margin-bottom: var(--padding-md);
+
+    span {
+      color: var(--white);
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    .row {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+
+      .card {
+        background: var(--card-bg);
+        border: 2px solid rgba(24, 24, 27, 0.8);
+        border-radius: 20px;
+
+        img {
+          margin-bottom: 16px;
+        }
+        h3 {
+          font-size: 18px;
+          color: var(--white);
+          font-weight: 500;
+          margin-bottom: 16px;
+          padding-inline: 32px;
+        }
+        p {
+          padding-inline: 32px;
+          line-height: 1.6;
+        }
+      }
+      .card-4 {
+        img {
+          padding-bottom: 32px;
+        }
+      }
+      .card-5 {
+        max-height: 460px;
+
+        img {
+          margin: 0;
+          max-width: 85%;
+        }
+      }
+    }
+    .row-2 {
+      align-items: start;
+    }
+  }
+}

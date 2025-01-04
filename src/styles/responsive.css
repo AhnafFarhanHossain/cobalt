@@ -126,4 +126,22 @@
       }
     }
   }
+  .features {
+    .title-content {
+      h1 {
+        text-align: center;
+        max-width: 100%;
+        font-size: 32px;
+      }
+      p {
+        text-align: center;
+        max-width: 100%;
+      }
+    }
+    .wrapper {
+      .row {
+        flex-direction: column;
+      }
+    }
+  }
 }
