@@ -405,3 +405,59 @@ button:hover {
     }
   }
 }
+
+/* Genius Section Styles */
+.genius {
+  .title-content {
+    margin-bottom: 32px;
+    h1 {
+      font-size: 48px;
+      max-width: 474px;
+      background: var(--gradient);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+    p {
+      color: var(--text);
+      font-size: 16px;
+      max-width: 576px;
+      line-height: 1.6;
+      span {
+        color: var(--white);
+      }
+    }
+  }
+  .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 20px;
+      border: 2px solid rgba(24, 24, 27, 0.8);
+
+      img {
+        margin-bottom: 16px;
+      }
+      h3 {
+        font-size: 18px;
+        color: var(--white);
+        font-weight: 500;
+        margin-bottom: 16px;
+        padding-inline: 32px;
+      }
+      p {
+        max-width: 380px;
+        color: var(--text);
+        padding-inline: 32px;
+        line-height: 1.6;
+        padding-bottom: 32px;
+      }
+    }
+  }
+}
