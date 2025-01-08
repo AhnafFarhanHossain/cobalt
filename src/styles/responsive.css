@@ -160,4 +160,42 @@
       flex-direction: column;
     }
   }
+
+  /* Footer Responsive Styles */
+  .footer {
+    .top {
+      h1 {
+        font-size: 28px;
+        max-width: 100%;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    .bottom {
+      padding: 32px 24px;
+
+      .wrapper {
+        flex-direction: column;
+        gap: 32px;
+
+        .left {
+          .copyright {
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+          }
+          p {
+            text-align: center;
+          }
+        }
+        .right {
+          .social {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
 }
